@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>DOCUMENTACION JAVA</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Documentacion JAVA</header>
+        <ul>
+            <li><a class="nav-link" href="#Iniciar_con_JAVA">Iniciar con java</a></li>
+            <li><a class="nav-link" href="#Java_punto_de_entrada">Java punto de entrada</a></li>
+            <li><a class="nav-link" href="#Imprimir_por_Consola">Imprimir por Consola</a></li>
+            <li><a class="nav-link" href="#Declaracion_de_Funciones">Declaracion de Funciones</a></li>
+            <li><a class="nav-link" href="#Programacion_Orientada_a_Objetos">Programacion Orientada a Objetos</a></li>
+        </ul>
+ 
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Iniciar_con_JAVA">
+            <header>Iniciar con JAVA</header>
+            <p>Pasos para iniciar</p>
+            <ol>
+                <li>Descargar Java</li>
+                <li>Descargar SDK</li>
+                <li>Descargar entorno de Desarrollo</li>
+                <li>Comenzar el proyecto en el IDE</li>
+                <li>Escribir Hello world y correr el codigo</li>
+            </ol>
+            <pre>
+                <code>
+                    public class Principal { 
+
+                        public static void main(String[] args){
+                        } 
+                      
+                      }
+                </code>
+            </pre>
+        </section>
+        <section class="main-section"id="Java_punto_de_entrada">
+            <header>Java punto de entrada</header>
+            <p>El punto de incio o entrada en JAVA es con la Declaracion de la funcion Main</p>
+            <P>
+                Esta caracterizado por un (String[]arg) como parametro de la funcion
+            </P>
+            <pre>
+                <code>
+                    public class HolaMundo {
+                        public static void main(String[] args) {
+                          System.out.println("Hola Mundo!");
+                        }
+                      }
+                      
+                </code>
+            </pre>
+            <p>
+                La función (main) acepta un parámetro de tipo String que se utiliza 
+                para pasar argumentos de línea de comando al programa. 
+                Estos argumentos son opcionales y pueden ser utilizados para personalizar la ejecución del programa.
+            </p>
+        </section>
+        <section class="main-section"id="Imprimir_por_Consola">
+            <header>Imprimir por Consola</header>
+            <p>Para imprimir por consola en Java, puedes usar la clase System.out y su método println(). </p>
+            <p>Es un codigo muy largo pero es la unica opcion</p>
+            <pre>
+                <code>
+                    public class Main {
+                        public static void main(String[] args) {
+                            System.out.println("¡Hola, mundo!");
+                        }
+                    }
+                   
+                    
+                </code>
+            </pre>
+        </section>
+       
+        <p>
+            En este ejemplo imprime por consola cuando ejecutamos el programa
+        </p>
+        <section class="main-section"id="Declaracion_de_Funciones">
+            <header>Declaracion de Funciones</header>
+            <p>En Java, una función se conoce como método. Un método es una sección de código que realiza una tarea específica 
+                y puede ser llamado desde otro lugar en el programa.</p>
+                <pre>
+                    <code>
+                        public int sumar(int num1, int num2) {
+                            int resultado = num1 + num2;
+                            return resultado;
+                        }
+                           
+                        
+                    </code>
+                </pre>
+                </section>
+                <p>copia de codigo:</p>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fjesgargardon.com%2Fwp-content%2Fuploads%2FMetodo-Java.png&f=1&nofb=1&ipt=5e988defe4fa56fbca38b0a7e125ff459f3636849e6172a61927d19956787b98&ipo=images" alt="java-method"/>
+                
+        <section class="main-section"id="Programacion_Orientada_a_Objetos">
+            <header>Programacion Orientada a Objetos</header>
+            <p>La programación orientada a objetos (POO) es un paradigma de programación 
+                que se basa en la idea de organizar el código en "objetos" que encapsulan datos y
+                 comportamientos. En la POO, los objetos son instancias de una clase, 
+                 que define las propiedades y métodos que los objetos de esa clase tendrán.</p>
+                 
+                 <p>La POO se centra en la definición de objetos, que son entidades que tienen un estado interno y un comportamiento. Los objetos interactúan entre sí mediante el envío de mensajes, que son solicitudes para realizar una operación específica. Cada objeto tiene un conjunto de atributos, que son las 
+                    características que definen su estado, y métodos, que son las operaciones que puede realizar.</p>
+                    <p>
+                        La POO tiene varias ventajas, como la modularidad, la reutilización de código y la capacidad de representar de manera más precisa 
+                        el mundo real. Además, permite la creación de aplicaciones más grandes y complejas, ya que se pueden dividir en objetos más pequeños y manejables.
+                    </p>
+                    <pre>
+                        <code>
+                            public class Coche {
+                                // Variables de instancia
+                                private String marca;
+                                private String modelo;
+                                private int ano;
+                                
+                                // Constructor
+                                public Coche(String marca, String modelo, int ano) {
+                                    this.marca = marca;
+                                    this.modelo = modelo;
+                                    this.ano = ano;
+                                }
+                            }
+                            </code>
+                        
+                      </pre>
+                      
+                      <p>
+                        En este ejemplo, la clase Coche tiene tres variables de instancia (marca, modelo y ano), un constructor que inicializa estas variables, tres métodos (arrancar, frenar y getAno) y un método principal (main) 
+                        que crea una instancia de Coche, llama a sus métodos y muestra información sobre el año del coche.
+                    </p>
+        </section>
+<footer>
+    <p>
+        Documentacion sobre Java en la parte superior de la Programacion_Orientada_a_Objetos
+    </p>
+</footer>
+    </main>
+</body>
+</html>
